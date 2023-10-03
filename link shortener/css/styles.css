@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-inline: auto;
+    font-size: 18px;
+    font-family: "poppins", "san-serif";
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.2rem;
+    margin-bottom: 3rem;
+}
+.left{
+    display: flex;
+}
+.left ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.left ul a{
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    color: grey;
+    text-decoration: none;
+}
+.right{
+    margin-left: 0.5rem;
+}
+.right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.right ul a{
+    color: grey;
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    text-decoration: none;
+}
+.right ul .active{
+    background: cyan;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.4rem 1.3rem;
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    width: 1.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0.3rem auto;
+    transition:all 0.3s ease-in-out;
+    background: black;
+}
+section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content{
+    max-width: 30rem;
+}
+.content h1{
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+.content p{
+    margin: 0.5rem;
+    color: grey;
+}
+.content .btn{
+    background: cyan;
+    margin: 0.5rem;
+    padding: 0.5rem 1.7rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+}
+.woman-working{
+    width: 100%;
+}
+input{
+    padding: 0.6rem 0.3rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    flex: 1;
+    border-radius: 0.2rem;
+}
+.input-container{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(50, 2, 71);
+    overflow: hidden;
+    border-radius: 0.3rem;
+    width: min(10% 50rem);
+    position: relative;
+    padding: 1rem 1.5rem;
+}
+.input-btn{
+    cursor: pointer;
+    background-color: cyan;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.copy-btn{
+    cursor: pointer;
+    background-color: cyan;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.services{
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.services-content{
+    max-width: 30rem;
+}
+.services-content p{
+    color: gray;
+}
+.cards{
+    margin-top: 2.5rem;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.card p{
+    color: rgb(52,44,44);
+}
+.card{
+    margin: 2rem;
+    max-width: 20rem;
+}
+.card1{
+    background:rgb(239,241,247);
+    padding: 1rem 0.2rem;
+    border-radius: 0.3rem;
+}
+.card2{
+    background:rgb(239,241,247);
+    padding: 1rem 0.2rem;
+    border-radius: 0.3rem;
+}
+.card3{
+    background:rgb(239,241,247);
+    padding: 1rem 0.2rem;
+    border-radius: 0.3rem;
+}
+.boost{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    background: rgb(50, 2, 71);
+    color: white;
+    padding: 1.8rem;
+    gap: 2rem;
+    position: relative;
+    flex-direction: column;
+
+}
+.boost .btn{
+    background: cyan;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(54, 37, 76);
+    align-items: center;
+}
+.footer-links{
+    margin-top: 2rem;
+}
+ul li{
+    margin: 0.2rem 0;
+    color:grey;
+    list-style: none;
+    
+}
+ul :nth-child(1){
+    color: white;
+    font-weight: bold;
+}
+.footer-socials{
+    display: flex;
+    justify-content: space-between;
+}
+.social-links{
+    margin-top: 2rem;
+    padding: 0.4rem 0.5rem;
+}
+.sm{
+    display: none;
+}
+
+
+
+
+
+/* Media query for screens between 320px and 520px */
+@media screen and (min-width: 320px) and (max-width: 520px) {
+    header {
+      flex-direction: column; 
+      margin: 0.8rem;
+      margin-bottom: 2rem;
+    }
+    
+  
+    .left, .right {
+      margin-left: 0; 
+    }
+  
+    .left ul, .right ul {
+      justify-content: space-around; 
+      margin-top: 20px; 
+     
+    }
+  
+    .left ul a, .right ul a {
+      padding: 0.2rem 0.5rem; 
+      align-self: flex-start;
+      align-items: flex-start;
+     
+    }
+  
+    .right ul .active {
+      padding: 0.2rem 0.7rem; 
+    }
+    .bar{
+        display: none;
+    }
+    section {
+      align-items: flex-start;
+      display: grid;
+      flex-direction: column;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem; 
+    }
+  
+    .woman-working {
+        width: 350px;
+     
+    }
+  
+    .input-container {
+      width: 100%; 
+      flex-direction: row;
+      display: grid;
+      justify-content: space-around;
+      
+    }
+  
+    .input-btn{
+        margin-left: 5px;
+    }
+     .copy-btn {
+      margin-left: 6px;
+      margin-top: 5px;
+    }
+  
+    .services {
+      margin-top: 3rem; 
+    }
+  
+    .cards {
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+  
+    .card {
+      max-width: 100%; 
+      margin: 1rem; 
+    }
+  
+    .boost {
+      padding: 1rem; 
+    }
+    footer{
+        display: grid;
+        justify-content: space-around;
+        background: rgb(54, 37, 76);
+        align-items: center;
+    }
+    .footer-links{
+        margin-top: 2rem;
+    }
+    ul li{
+        margin: 0.2rem 0;
+        color:grey;
+        list-style: none;
+        
+    }
+    ul :nth-child(1){
+        color: white;
+        font-weight: bold;
+    }
+    .footer-socials{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .social-links{
+        margin-top: 2rem;
+        padding: 0.4rem 0.5rem;
+    }
+  }
+  
+
+/* Media query for screens between 521px and 921px */
+@media screen and (min-width: 521px) and (max-width: 921px) {
+    /* Adjust styles for this screen size range here */
+    header {
+        flex-direction: column; 
+        margin: 0.8rem;
+        margin-bottom: 2rem;
+      }
+      
+    
+      .left, .right {
+        margin-left: 0; 
+      }
+    
+      .left ul, .right ul {
+        justify-content: space-around; 
+        margin-top: 20px; 
+       
+      }
+    
+      .left ul a, .right ul a {
+        padding: 0.2rem 0.5rem; 
+        align-self: flex-start;
+        align-items: flex-start;
+       
+      }
+    
+      .right ul .active {
+        padding: 0.2rem 0.7rem; 
+      }
+      .bar{
+          display: none;
+      }
+ 
+    section {
+      align-items: center; /* Revert to center alignment for content */
+      align-items: flex-start;
+      display: grid;
+      flex-direction: column;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem; /* Adjust font size as needed */
+    }
+  
+    .woman-working {
+      width: 500px;
+    }
+  
+    .input-container {
+      width: 100%;
+    }
+  
+    .services {
+      margin-top: 3rem;
+    }
+  
+    .cards {
+      justify-content: space-between; 
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      max-width: calc(33.33% - 2rem); /* Adjust card width as needed */
+      margin: 1rem;
+    }
+  
+    .boost {
+      padding: 1.8rem; 
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column; /* Stack footer links vertically */
+      margin-top: 2rem;
+    }
+  
+    .footer-socials {
+      flex-direction: row; 
+      text-align: left;
+    }
+  
+    .social-links {
+      margin-top: 0;
+      margin-right: 1rem; 
+    }
+  
+    .sm {
+      display: inline-block; /* Show social media icons */
+    }
+  }
